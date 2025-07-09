@@ -1,0 +1,1 @@
+WP SetAIKey("{ここにOpenAIのAPIキーを入力してください}")
