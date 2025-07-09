@@ -2,7 +2,7 @@
 
 スライドは[こちら](https://speakerdeck.com/miyako/4d-20-r9)
 
-#### 4D Qoldy Pro - 本番環境対応可 & 顧客成功支援体制
+#### 4D Qodly Pro - 本番環境対応可 & 顧客成功支援体制
 
 R8からの正式名称は4D Qodly Pro。20  R2のデベロッパープレビュー（2023年9月）から1年半の開発期間およびベータ期間を経て，R8で実際のプロダクションで使用できる水準に到達した。Qodly Studioの開発ライセンスは，シルバー以上のバートナー特典であるDeveloper Proおよびゴールドまたはシルバー拡張特典のDeveloper Bundleライセンスに含まれている。4D Server版のQodly Studioの開発に必要なライセンスは，買い切り版またはサブスク版の4D Server，およびDeveloper Bundleライセンスに含まれている。Qodly Proの運用に必要なライセンスは，買い切り版またはサブスク版の4D Serverに含まれている。
 
