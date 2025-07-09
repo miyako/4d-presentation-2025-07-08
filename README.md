@@ -1,8 +1,6 @@
 # 4d-presentation-2025-07-08
 
-### resources 
-
-* [slides](https://speakerdeck.com/miyako/4d-20-r9)
+スライドは[こちら](https://speakerdeck.com/miyako/4d-20-r9)
 
 #### 4D Qoldy Pro - 本番環境対応可 & 顧客成功支援体制
 
