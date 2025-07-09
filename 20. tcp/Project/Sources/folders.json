@@ -1,0 +1,28 @@
+{
+	"HDI": {
+		"tables": [
+			"INFO"
+		],
+		"methods": [
+			"00_Start",
+			"InitInfo",
+			"m_Quit"
+		],
+		"forms": [
+			"[INFO]Input",
+			"[INFO]Output",
+			"HDI",
+			"HDI2"
+		]
+	},
+	"Servers": {
+		"methods": [
+			"4D_Alarm_Server",
+			"4D_Lightbulb_Server",
+			"4D_Music_Server",
+			"4D_Plant_Server",
+			"4D_Thermometer_Server"
+		]
+	},
+	"trash": {}
+}

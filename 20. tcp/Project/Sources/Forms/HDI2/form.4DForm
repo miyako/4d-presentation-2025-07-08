@@ -1,0 +1,317 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 800,
+	"windowMaxWidth": 32000,
+	"windowMinHeight": 540,
+	"windowMaxHeight": 32000,
+	"width": 960,
+	"height": 640,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onUnload"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 20,
+					"left": 20,
+					"width": 920,
+					"height": 560,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "objTabs",
+					"dataSourceTypeHint": "object",
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Tab Control.4dm"
+				},
+				"BtnOK": {
+					"type": "button",
+					"top": 600,
+					"left": 838,
+					"width": 102,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"class": "Buttons_13",
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/BtnOK.4dm"
+				},
+				"Line": {
+					"type": "line",
+					"top": 0,
+					"left": 480,
+					"height": 640,
+					"visibility": "hidden",
+					"sizingY": "grow",
+					"stroke": "#800080",
+					"strokeDashArray": "1 1"
+				}
+			}
+		},
+		{
+			"objects": {
+				"information": {
+					"type": "input",
+					"top": 80,
+					"left": 80,
+					"width": 800,
+					"height": 480,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Infos[0].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"class": "description"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 49,
+					"left": 31,
+					"width": 892,
+					"height": 523,
+					"right": 923,
+					"fill": "#FFFFFF",
+					"stroke": "transparent",
+					"bottom": 572
+				},
+				"Static Picture1": {
+					"type": "picture",
+					"top": 241,
+					"left": 167,
+					"width": 450,
+					"height": 288,
+					"picture": "/RESOURCES/Images/Maison.jpg"
+				},
+				"Ampoule": {
+					"type": "pictureButton",
+					"left": 44,
+					"top": 385,
+					"width": 100,
+					"height": 100,
+					"events": [
+						"onClick"
+					],
+					"picture": "/RESOURCES/Images/Ampoule.png",
+					"method": "ObjectMethods/Ampoule.4dm",
+					"loopBackToFirstFrame": false,
+					"switchBackWhenReleased": false,
+					"useLastFrameAsDisabled": true,
+					"switchContinuously": false,
+					"rowCount": 4
+				},
+				"Cloche": {
+					"type": "pictureButton",
+					"left": 161,
+					"top": 151,
+					"width": 90,
+					"height": 90,
+					"events": [
+						"onClick"
+					],
+					"picture": "/RESOURCES/Images/Cloche.png",
+					"switchBackWhenReleased": false,
+					"method": "ObjectMethods/Cloche.4dm",
+					"switchContinuously": false,
+					"rowCount": 4,
+					"switchWhenRollover": false,
+					"useLastFrameAsDisabled": true
+				},
+				"Note": {
+					"type": "pictureButton",
+					"left": 302,
+					"top": 103,
+					"width": 70,
+					"height": 70,
+					"events": [
+						"onClick"
+					],
+					"picture": "/RESOURCES/Images/Note.png",
+					"switchBackWhenReleased": false,
+					"method": "ObjectMethods/Note.4dm",
+					"switchContinuously": false,
+					"rowCount": 4,
+					"useLastFrameAsDisabled": true,
+					"loopBackToFirstFrame": false
+				},
+				"Thermomètre": {
+					"type": "pictureButton",
+					"left": 107,
+					"top": 259,
+					"width": 28,
+					"height": 80,
+					"events": [
+						"onClick"
+					],
+					"picture": "/RESOURCES/Images/Thermomètre.png",
+					"switchBackWhenReleased": false,
+					"method": "ObjectMethods/Thermomètre.4dm",
+					"switchContinuously": false,
+					"rowCount": 4,
+					"useLastFrameAsDisabled": true
+				},
+				"Feuille": {
+					"type": "pictureButton",
+					"left": 452,
+					"top": 98,
+					"width": 60,
+					"height": 60,
+					"events": [
+						"onClick"
+					],
+					"picture": "/RESOURCES/Images/Feuille.png",
+					"switchBackWhenReleased": false,
+					"method": "ObjectMethods/Feuille.4dm",
+					"switchContinuously": false,
+					"loopBackToFirstFrame": false,
+					"switchWhenRollover": false,
+					"rowCount": 4,
+					"useLastFrameAsDisabled": true
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 59,
+					"left": 641,
+					"width": 268,
+					"height": 502,
+					"fill": "automatic"
+				},
+				"Text": {
+					"type": "text",
+					"text": "Click on one of the 5 icons to connect to the device and control it from afar.",
+					"top": 83,
+					"left": 667,
+					"width": 229,
+					"height": 195
+				},
+				"ButtonConnect": {
+					"type": "button",
+					"text": "Connect",
+					"top": 261,
+					"left": 668,
+					"width": 222,
+					"height": 27,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/ButtonConnect.4dm",
+					"focusable": false
+				},
+				"ButtonInfo": {
+					"type": "button",
+					"text": "Get information",
+					"top": 308,
+					"left": 668,
+					"width": 222,
+					"height": 27,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/ButtonInfo.4dm",
+					"focusable": false
+				},
+				"ButtonActivate": {
+					"type": "button",
+					"text": "Activate/Deactivate",
+					"top": 355,
+					"left": 668,
+					"width": 222,
+					"height": 27,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/ButtonActivate.4dm",
+					"focusable": false
+				},
+				"ButtonDisconnect": {
+					"type": "button",
+					"text": "Disconnect",
+					"top": 402,
+					"left": 668,
+					"width": 222,
+					"height": 27,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/ButtonDisconnect.4dm",
+					"focusable": false
+				},
+				"StartServers": {
+					"type": "button",
+					"text": "Start servers",
+					"top": 183,
+					"left": 668,
+					"width": 222,
+					"height": 27,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/StartServers.4dm",
+					"focusable": false
+				},
+				"OpenLog": {
+					"type": "button",
+					"text": "Open log",
+					"top": 492,
+					"left": 668,
+					"width": 222,
+					"height": 27,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/OpenLog.4dm",
+					"focusable": false
+				}
+			}
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"geometryStamp": 228,
+	"windowTitle": "HDI TCPConnection"
+}

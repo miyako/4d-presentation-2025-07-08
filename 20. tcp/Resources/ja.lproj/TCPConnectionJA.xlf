@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="http://www.w3.org/1999/xhtml" version="1.0">
+  <file datatype="x-STR#" original="undefined" product-version="v20" source-language="en-US" target-language="ja">
+    <header>
+      <note/>
+    </header>
+    <body>
+
+        <!-- Work Area -->
+<group resname="[ProjectForm]">
+<group resname="HDI">
+<trans-unit id="1" resname="BtnDemo">
+<source>Demo</source>
+<target>スタート</target>
+</trans-unit>
+<trans-unit id="2" resname="TxtVersion">
+<source>{version} and above</source>
+<target>{version} 以降...</target>
+</trans-unit>
+<trans-unit id="3" resname="labelVersion">
+<source>Version:</source>
+<target>バージョン:</target>
+</trans-unit>
+<trans-unit id="4" resname="labelBlog">
+<source>Blog:</source>
+<target>Blog:</target>
+</trans-unit>
+<trans-unit id="5" resname="labelInfo">
+<source>Info:</source>
+<target>概要:</target>
+</trans-unit>
+<trans-unit id="6" resname="txtTitle">
+<source>• title •</source>
+<target>• title •</target>
+</trans-unit>
+<trans-unit id="7" resname="Text">
+<source>How do I…</source>
+<target>どうやって...</target>
+</trans-unit>
+<trans-unit id="8" resname="ErrorMainText">
+<source>Sorry, this "How do I" (HDI) example must
+be used with a newer version of 4D
+({version} and above)</source>
+<target>申し訳ありません。この"How do I..." (HDI) サンプルは、より新しいバージョンの4D（{version} 以降）で開く必要があります。</target>
+</trans-unit>
+<trans-unit id="9" resname="ErrorSubText">
+<source>Do not attempt to open this HDI in design mode using this version; if you do so, forms and/or methods could be altered because of missing functionality.</source>
+<target>このHDIをデザインモードで開かないでください。
+開いてしまった場合、フォームやメソッドが不完全になってしまう恐れがあります。</target>
+</trans-unit>
+</group>
+<group resname="HDI2">
+<trans-unit id="1" resname="BtnOK">
+<source>OK</source>
+<target>閉じる</target>
+</trans-unit>
+<trans-unit id="2" resname="Text">
+<source>Click on one of the 5 icons to connect to the device and control it from afar.</source>
+<target>5つのアイコンのうち1つをクリックして選択し、接続して、操作します</target>
+</trans-unit>
+<trans-unit id="3" resname="ButtonConnect">
+<source>Connect</source>
+<target>接続する</target>
+</trans-unit>
+<trans-unit id="4" resname="ButtonInfo">
+<source>Get information</source>
+<target>情報を取得する</target>
+</trans-unit>
+<trans-unit id="5" resname="ButtonActivate">
+<source>Activate/Deactivate</source>
+<target>作動/停止</target>
+</trans-unit>
+<trans-unit id="6" resname="ButtonDisconnect">
+<source>Disconnect</source>
+<target>接続を解除する</target>
+</trans-unit>
+<trans-unit id="7" resname="StartServers">
+<source>Start servers</source>
+<target>サーバーを開始する</target>
+</trans-unit>
+<trans-unit id="8" resname="OpenLog">
+<source>Open log</source>
+<target>ログを開く</target>
+</trans-unit>
+</group>
+</group>
+
+    </body>
+  </file>
+</xliff>
