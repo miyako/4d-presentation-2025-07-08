@@ -1,0 +1,8 @@
+[
+  {
+    "class": "OAuth2Authorization",
+    "method": "getResponse",
+    "verbs": "GET",
+    "regexPattern": "/authorize/"
+  }
+]

@@ -1,0 +1,39 @@
+{
+	"Desktop": {
+		"methods": [
+			"Test_Google",
+			"Test_Microsoft"
+		],
+		"forms": [
+			"Google",
+			"Microsoft"
+		]
+	},
+	"OAUTH2": {
+		"classes": [
+			"_Calendar",
+			"_CalendarForm",
+			"_CalendarFormGoogle",
+			"_CalendarFormMicrosoft",
+			"_CalendarGoogle",
+			"_CalendarMicrosoft"
+		]
+	},
+	"ORDA": {
+		"tables": [
+			"Credentials",
+			"INFO"
+		],
+		"classes": [
+			"DataStore"
+		]
+	},
+	"Qodly": {
+		"classes": [
+			"CalendarController",
+			"ConnectController",
+			"OAuth2Authorization"
+		]
+	},
+	"trash": {}
+}

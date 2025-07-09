@@ -1,0 +1,111 @@
+{
+	"metadata": {
+		"v": "1.0",
+		"datasources": [
+			{
+				"id": "AuthenticateURI",
+				"type": "scalar",
+				"namespace": "",
+				"dataType": "string",
+				"initialValue": ""
+			},
+			{
+				"id": "eventsList",
+				"type": "scalar",
+				"namespace": "",
+				"dataType": "array",
+				"initialValue": []
+			},
+			{
+				"id": "selectedDate",
+				"type": "scalar",
+				"namespace": "",
+				"dataType": "date",
+				"initialValue": "21/05/2025"
+			},
+			{
+				"id": "SelectedEvent",
+				"type": "scalar",
+				"namespace": "",
+				"dataType": "object",
+				"initialValue": {}
+			}
+		],
+		"styles": []
+	},
+	"components": {
+		"ROOT": {
+			"type": {
+				"resolvedName": "Container"
+			},
+			"isCanvas": true,
+			"props": {
+				"classNames": [],
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "CalendarController",
+						"events": [
+							"oninit"
+						],
+						"id": "oNY8eu8Jr878TvZ8JrWYsP",
+						"method": "CalendarController.getEvents",
+						"params": [],
+						"datasource": "",
+						"methodType": "singleton",
+						"returns": {
+							"name": "result",
+							"type": "Collection",
+							"datasource": "eventsList"
+						}
+					}
+				],
+				"airyMode": false,
+				"className": "bg-white h-full w-full px-6"
+			},
+			"displayName": "Page",
+			"custom": {},
+			"parent": "",
+			"hidden": false,
+			"nodes": [
+				"-tnmrPb37c"
+			],
+			"linkedNodes": {}
+		},
+		"-tnmrPb37c": {
+			"type": {
+				"resolvedName": "Scheduler"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"language": "en",
+				"weekStart": "1",
+				"yearNav": true,
+				"minutes": "60",
+				"days": "work",
+				"color": "#1a73e8",
+				"selectedColor": "#C084FC",
+				"timeFormat": "24",
+				"height": "64px",
+				"headerPosition": "",
+				"todayButton": true,
+				"datasource": "eventsList",
+				"currentElement": "SelectedEvent",
+				"selectedDate": "selectedDate",
+				"property": "subject",
+				"startDate": "startDate",
+				"startTime": "startTime",
+				"endTime": "endTime",
+				"hours": "work"
+			},
+			"displayName": "WeekView",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		}
+	}
+}

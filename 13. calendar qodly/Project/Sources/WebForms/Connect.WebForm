@@ -1,0 +1,199 @@
+{
+	"metadata": {
+		"v": "1.0",
+		"datasources": [
+			{
+				"id": "authenticationURI",
+				"type": "scalar",
+				"namespace": "",
+				"dataType": "string",
+				"initialValue": ""
+			}
+		],
+		"styles": [
+			{
+				"name": "sign-in",
+				"content": "self {\n  position: absolute;\n  width: 1727px;\n  height: 1119px;\n  top: 0;\n  left: 0;\n  background-blend-mode: overlay;\n  background: linear-gradient(135deg, rgba(235, 144, 206, 0.6) 0%, rgba(129, 53, 212, 0.2) 54.91%, rgba(72, 55, 188, 0) 100%);\n}",
+				"parentId": null,
+				"id": "chyCpB18gb-6WmyX4Vdkz"
+			},
+			{
+				"name": "lightMode",
+				"content": "self {\n  background-color : #ffffffff;\n  color : #666682;\n}",
+				"parentId": null,
+				"id": "DqyTqbssWxMrnZfb5HBFx"
+			}
+		]
+	},
+	"components": {
+		"ROOT": {
+			"type": {
+				"resolvedName": "Container"
+			},
+			"isCanvas": true,
+			"props": {
+				"classNames": [],
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "DataStore",
+						"events": [
+							"oninit"
+						],
+						"id": "93Yq9XBkkyhCk1PpTzZDun",
+						"method": "ds.authentify",
+						"params": [
+							{
+								"name": "user",
+								"type": "Text",
+								"datasource": "guest",
+								"id": "sh9JDYiE2XYeKLCesvREFw",
+								"isHardCoded": true,
+								"hardCodedType": "string",
+								"hardCodedValue": "guest"
+							}
+						],
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "Text"
+						},
+						"feedback": true
+					}
+				],
+				"airyMode": false,
+				"className": "bg-white h-full w-full px-6"
+			},
+			"displayName": "Page",
+			"custom": {},
+			"parent": "",
+			"hidden": false,
+			"nodes": [
+				"IMum7L1OIA"
+			],
+			"linkedNodes": {}
+		},
+		"NOHcV_NR1I": {
+			"type": {
+				"resolvedName": "Image"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "ConnectController",
+						"events": [
+							"onclick"
+						],
+						"id": "aKVYKLec7dcCpVWjSH65gy",
+						"method": "ConnectController.getUri",
+						"params": [],
+						"datasource": "",
+						"methodType": "singleton",
+						"returns": {
+							"name": "result",
+							"type": "Text",
+							"datasource": "authenticationURI"
+						}
+					},
+					{
+						"type": "method",
+						"dataclass": "ConnectController",
+						"events": [
+							"onclick"
+						],
+						"id": "5D6j44wxJHEQaF2jkQZUcD",
+						"method": "ConnectController.getTokenAsync",
+						"params": [],
+						"datasource": "",
+						"methodType": "singleton",
+						"returns": {
+							"name": "result",
+							"type": "Boolean"
+						}
+					},
+					{
+						"type": "navigation",
+						"id": "4GGZd3LfTDK66ZamtKQZns",
+						"events": [
+							"onclick"
+						],
+						"externalLink": true,
+						"parent": "same-tab",
+						"isHardCoded": false,
+						"target": "authenticationURI"
+					}
+				],
+				"style": {
+					"width": "300px",
+					"height": "auto",
+					"backgroundPosition": "center",
+					"backgroundSize": "contain",
+					"justifyContent": "center",
+					"alignItems": "center",
+					"display": "inline-block"
+				},
+				"imgSrc": "/$shared/assets/images/ms-symbollockup_signin_light_sHGspF6d9dkW4pogZEngjJ.svg"
+			},
+			"displayName": "Image",
+			"custom": {},
+			"parent": "aGGjXpOwRZ",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"IMum7L1OIA": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"flexDirection": "row",
+					"paddingTop": "2px",
+					"paddingRight": "2px",
+					"paddingBottom": "2px",
+					"paddingLeft": "2px",
+					"height": "100%"
+				},
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [
+				"aGGjXpOwRZ"
+			],
+			"linkedNodes": {}
+		},
+		"aGGjXpOwRZ": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"textAlign": "center",
+					"display": "flex",
+					"justifyContent": "center",
+					"alignItems": "center"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "IMum7L1OIA",
+			"hidden": false,
+			"nodes": [
+				"NOHcV_NR1I"
+			],
+			"linkedNodes": {}
+		}
+	}
+}

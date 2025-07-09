@@ -1,0 +1,83 @@
+{
+	"forceLogin": true,
+	"permissions": {
+		"allowed": [
+			{
+				"applyTo": "ConnectController",
+				"type": "singleton",
+				"execute": [
+					"guest"
+				],
+				"promote": [
+					"authentify"
+				]
+			},
+			{
+				"applyTo": "ConnectController.getUri",
+				"type": "singletonMethod",
+				"execute": [
+					"guest"
+				],
+				"promote": [
+					"authentify"
+				]
+			},
+			{
+				"applyTo": "CalendarController.getEvents",
+				"type": "singletonMethod",
+				"execute": [
+					"guest"
+				]
+			},
+			{
+				"applyTo": "OAuth2Authorization.getResponse",
+				"type": "singletonMethod",
+				"execute": [
+					"guest"
+				]
+			},				
+			{
+				"applyTo": "ds",
+				"type": "datastore",
+				"read": [
+					"none"
+				],
+				"execute": [
+					"none"
+				],
+				"create": [
+					"none"
+				],
+				"update": [
+					"none"
+				]
+			},
+			{
+				"applyTo": "Credentials",
+				"type": "dataclass",
+				"read": [
+					"authentify"
+				],
+				"execute": [
+					"none"
+				],
+				"create": [
+					"none"
+				],
+				"update": [
+					"none"
+				]
+			}
+		]
+	},
+	"privileges": [
+		{
+		  "privilege": "none"
+		},
+		{
+		  "privilege": "authentify",
+		  "includes": ["guest"]
+		}
+	],
+	"roles": []
+}
