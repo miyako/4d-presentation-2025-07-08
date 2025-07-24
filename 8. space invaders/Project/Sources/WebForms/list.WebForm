@@ -1,0 +1,134 @@
+{
+	"metadata": {
+		"v": "1.0",
+		"datasources": [
+			{
+				"id": "invaders",
+				"type": "entitysel",
+				"dataclass": "spaceInvader",
+				"initialValue": "all",
+				"depth": null,
+				"pageSize": 100
+			}
+		],
+		"styles": []
+	},
+	"components": {
+		"ROOT": {
+			"type": {
+				"resolvedName": "Container"
+			},
+			"isCanvas": true,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"airyMode": false,
+				"className": "bg-white h-full w-full px-6"
+			},
+			"displayName": "Page",
+			"custom": {},
+			"parent": "",
+			"hidden": false,
+			"nodes": [
+				"r3yJrExNfW",
+				"EWySw5Q6Ye"
+			],
+			"linkedNodes": {}
+		},
+		"r3yJrExNfW": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Invaders list",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"fontSize": "20px",
+					"fontWeight": "700"
+				}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"EWySw5Q6Ye": {
+			"type": {
+				"resolvedName": "DataTable"
+			},
+			"isCanvas": false,
+			"props": {
+				"iterable": true,
+				"classNames": [],
+				"events": [],
+				"style": {},
+				"headerHeight": 36,
+				"rowHeight": 30,
+				"iterableChild": true,
+				"datasource": "invaders",
+				"columns": [
+					{
+						"title": "Identifier",
+						"source": "identifier",
+						"width": 150,
+						"sorting": false,
+						"id": "eT8m1B4gWUdPxnH7XxtejH",
+						"format": "",
+						"dataType": "string"
+					},
+					{
+						"title": "Name",
+						"source": "name",
+						"width": "444px",
+						"sorting": false,
+						"id": "gduVPWKDzR8xm5DBxw53jp",
+						"format": "",
+						"dataType": "string"
+					},
+					{
+						"title": "Longitude",
+						"source": "longitude",
+						"width": 150,
+						"sorting": false,
+						"id": "5q8DTCyQgamHKMgLJZSE6X",
+						"format": "",
+						"dataType": "number"
+					},
+					{
+						"title": "Latitude",
+						"source": "latitude",
+						"width": 150,
+						"sorting": false,
+						"id": "6Qz13HLm9rPNaFpSv7Wbaf",
+						"format": "",
+						"dataType": "number"
+					}
+				]
+			},
+			"displayName": "DataTable",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		}
+	}
+}

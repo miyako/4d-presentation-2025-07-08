@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="SpaceInvaders" uuid="D5F0060C588C4E609F4CD4F989EE5158" collation_locale="en">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="spaceInvader" uuid="7A3EED851867443EB426B3A4937CBC22" id="2">
+		<field name="ID" uuid="D4D10F9CA4A04360ADBF12FDBB62129C" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="name" uuid="FB139F7E00524B5380AF144629D13A26" type="10" limiting_length="255" id="2"/>
+		<field name="identifier" uuid="1A5B9B27F295434281CDA5A6088EA002" type="10" limiting_length="255" id="3">
+			<field_extra multi_line="false"/>
+		</field>
+		<field name="longitude" uuid="EFF8E74930374C48B76C0C0FA78A9363" type="6" id="4">
+			<field_extra multi_line="false"/>
+		</field>
+		<field name="latitude" uuid="2EF1B0DA6CF84E7CBA65B3C29C283E57" type="6" id="5">
+			<field_extra multi_line="false"/>
+		</field>
+		<primary_key field_name="ID" field_uuid="D4D10F9CA4A04360ADBF12FDBB62129C"/>
+	</table>
+	<index kind="regular" unique_keys="true" uuid="5C5393DC50E4428499B4FE58A9DD7DB1" type="7">
+		<field_ref uuid="D4D10F9CA4A04360ADBF12FDBB62129C" name="ID">
+			<table_ref uuid="7A3EED851867443EB426B3A4937CBC22" name="spaceInvader"/>
+		</field_ref>
+	</index>
+	<base_extra>
+		<journal_file journal_file_enabled="true"/>
+	</base_extra>
+</base>

@@ -1,0 +1,106 @@
+{
+	"metadata": {
+		"v": "1.0",
+		"datasources": [
+			{
+				"id": "spaceInvaders",
+				"type": "entitysel",
+				"dataclass": "spaceInvader",
+				"initialValue": "all",
+				"depth": null,
+				"pageSize": 2000
+			}
+		],
+		"styles": []
+	},
+	"components": {
+		"ROOT": {
+			"type": {
+				"resolvedName": "Container"
+			},
+			"isCanvas": true,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"airyMode": false,
+				"className": "bg-white h-full w-full px-6"
+			},
+			"displayName": "Page",
+			"custom": {},
+			"parent": "",
+			"hidden": false,
+			"nodes": [
+				"aLml8Clgat",
+				"Bt_zltU3_E"
+			],
+			"linkedNodes": {}
+		},
+		"aLml8Clgat": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Space Invaders map",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"fontSize": "25px",
+					"fontWeight": "700"
+				}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"Bt_zltU3_E": {
+			"type": {
+				"resolvedName": "MultiMap"
+			},
+			"isCanvas": false,
+			"props": {
+				"name": "",
+				"classNames": [],
+				"events": [],
+				"style": {
+					"height": "600px",
+					"width": "600px"
+				},
+				"zoom": 14,
+				"showAllMarkers": true,
+				"animation": true,
+				"popup": true,
+				"mapDragging": true,
+				"distance": 0,
+				"icone": "fa-brands fa-space-awesome",
+				"datasource": "spaceInvaders",
+				"long": "longitude",
+				"lat": "latitude",
+				"tooltip": "name"
+			},
+			"displayName": "MultiMap",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"tables": {
+		"spaceInvader": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			},
+			"coordinates": {
+				"left": 257.2578125,
+				"top": 16.74609375,
+				"width": 351.00390625,
+				"height": 204.06640625
+			},
+			"displayable_fields_count": 7
+		}
+	}
+}

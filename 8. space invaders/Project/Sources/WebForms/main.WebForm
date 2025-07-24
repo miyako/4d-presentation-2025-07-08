@@ -1,0 +1,268 @@
+{
+	"metadata": {
+		"v": "1.0",
+		"datasources": [],
+		"styles": []
+	},
+	"components": {
+		"ROOT": {
+			"type": {
+				"resolvedName": "Container"
+			},
+			"isCanvas": true,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"airyMode": false,
+				"className": "bg-white h-full w-full px-6"
+			},
+			"displayName": "Page",
+			"custom": {},
+			"parent": "",
+			"hidden": false,
+			"nodes": [
+				"hP4nhHMFyz",
+				"GNsKGjp5_6",
+				"arFS_V0ngz"
+			],
+			"linkedNodes": {}
+		},
+		"hP4nhHMFyz": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "My space invaders map",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"textAlign": "center",
+					"fontWeight": "700",
+					"fontSize": "30px"
+				}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"arFS_V0ngz": {
+			"type": {
+				"resolvedName": "WebformLoader"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"webform": "list"
+			},
+			"displayName": "Page Loader",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"GNsKGjp5_6": {
+			"type": {
+				"resolvedName": "Popover"
+			},
+			"isCanvas": false,
+			"props": {
+				"name": "",
+				"classNames": [],
+				"events": [],
+				"position": "bottom-left",
+				"isShown": false,
+				"action": "click",
+				"style": {
+					"minWidth": "48px",
+					"width": "fit-content"
+				}
+			},
+			"displayName": "Popover",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"PopoverTrigger": "Y8ndz9Sj8I",
+				"PopoverContent": "uNru6YKyjD"
+			}
+		},
+		"Y8ndz9Sj8I": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"borderRadius": "6px",
+					"backgroundColor": "#3b82f6ff",
+					"color": "#ffffffff",
+					"cursor": "pointer"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "GNsKGjp5_6",
+			"hidden": false,
+			"nodes": [
+				"tgTA62Xl0a"
+			],
+			"linkedNodes": {}
+		},
+		"tgTA62Xl0a": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "My menu"
+							}
+						]
+					}
+				],
+				"datasource": ""
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "Y8ndz9Sj8I",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"uNru6YKyjD": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"boxShadow": "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+					"backgroundColor": "#ffffffd8",
+					"width": "400px",
+					"borderWidth": "1px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "GNsKGjp5_6",
+			"hidden": false,
+			"nodes": [
+				"TdcUhhoq4M",
+				"xJK8vDQ4cv"
+			],
+			"linkedNodes": {}
+		},
+		"TdcUhhoq4M": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [
+					{
+						"type": "navigation",
+						"id": "2MbbU7WdWZ5DhpQFbcvrEa",
+						"events": [
+							"onclick"
+						],
+						"externalLink": false,
+						"loader": "arFS_V0ngz",
+						"parent": "webform-loader",
+						"target": "list",
+						"isHardCoded": true
+					}
+				],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "List"
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"cursor": "pointer"
+				}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "uNru6YKyjD",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"xJK8vDQ4cv": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [
+					{
+						"type": "navigation",
+						"id": "wvbKC8gjkoWB7Cd7eGkpaf",
+						"events": [
+							"onclick"
+						],
+						"externalLink": false,
+						"loader": "arFS_V0ngz",
+						"parent": "webform-loader",
+						"target": "map",
+						"isHardCoded": true
+					}
+				],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Map"
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"iterableChild": true,
+				"style": {
+					"cursor": "pointer"
+				}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "uNru6YKyjD",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		}
+	}
+}

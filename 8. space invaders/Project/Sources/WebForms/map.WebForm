@@ -1,0 +1,161 @@
+{
+	"metadata": {
+		"v": "1.0",
+		"datasources": [
+			{
+				"id": "invaders",
+				"type": "entitysel",
+				"dataclass": "spaceInvader",
+				"initialValue": "all",
+				"depth": null,
+				"pageSize": 100
+			},
+			{
+				"id": "invader",
+				"type": "entity",
+				"dataclass": "spaceInvader",
+				"from": "invaders",
+				"namespace": "",
+				"initialValue": "",
+				"depth": null
+			}
+		],
+		"styles": []
+	},
+	"components": {
+		"ROOT": {
+			"type": {
+				"resolvedName": "Container"
+			},
+			"isCanvas": true,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"airyMode": false,
+				"className": "bg-white h-full w-full px-6"
+			},
+			"displayName": "Page",
+			"custom": {},
+			"parent": "",
+			"hidden": false,
+			"nodes": [
+				"r3yJrExNfW",
+				"f1kZmDnUa5",
+				"-UY43x0AqJ"
+			],
+			"linkedNodes": {}
+		},
+		"r3yJrExNfW": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Invaders map",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"fontSize": "20px",
+					"fontWeight": "700"
+				}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"-UY43x0AqJ": {
+			"type": {
+				"resolvedName": "MultiMap"
+			},
+			"isCanvas": false,
+			"props": {
+				"name": "",
+				"classNames": [],
+				"events": [],
+				"style": {
+					"height": "800px",
+					"width": "800px"
+				},
+				"zoom": 50,
+				"showAllMarkers": true,
+				"animation": true,
+				"popup": true,
+				"mapDragging": true,
+				"distance": 1,
+				"icone": "fa-brands fa-space-awesome",
+				"datasource": "invaders",
+				"long": "longitude",
+				"lat": "latitude",
+				"tooltip": "name",
+				"currentElement": "invader"
+			},
+			"displayName": "MultiMap",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"f1kZmDnUa5": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Selected Invader: ",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							},
+							{
+								"type": "datasource",
+								"datasource": "invader.name",
+								"dsType": "string",
+								"children": [
+									{
+										"text": "invader.name"
+									}
+								]
+							},
+							{
+								"text": " "
+							}
+						]
+					}
+				],
+				"datasource": "invader.name"
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		}
+	}
+}
